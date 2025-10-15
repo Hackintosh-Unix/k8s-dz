@@ -1,0 +1,28 @@
+user:
+  isAdmin: true
+  name: Andrei
+  age: 33
+  work: SRE
+  skills:
+    - name: coding
+      level: 4
+      about: |
+        this is additional information
+    - name: system administrating
+      level: 5
+      about: |
+        nothing
+  address:
+    country: RU
+    city: Rostov-on-Don
+    street: Pushkina
+    num_of_house: Kolotushkina
+    num_of_apartment: 1
+  pets:
+    - name: malaya
+      poroda: unknown
+      isMeow: true
+    - name: grinya
+      poroda: rat
+      isMeow: false
+  
