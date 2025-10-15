@@ -1,1 +1,1 @@
-# k8s-dz
+# Мое ДЗ purleschool k8s
