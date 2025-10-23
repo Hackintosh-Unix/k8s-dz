@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: rabbitmq
-        image: rabbitmq:3.12
+        image: rabbitmq:3.12-management
         resources:
           limits:
             memory: "500Mi"
@@ -25,6 +25,7 @@ spec:
         ports:
         - containerPort: 15691
         - containerPort: 15692
+        - containerPort: 15672
         - containerPort: 25672
         - containerPort: 4369
         - containerPort: 5671
