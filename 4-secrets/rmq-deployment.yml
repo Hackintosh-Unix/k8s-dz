@@ -34,12 +34,12 @@ spec:
           - name: SEED_USERNAME
             valueFrom:
               secretKeyRef:
-                name: rabbitmq-secret
+                name: mysecret
                 key: SEED_USERNAME
           - name: SEED_USER_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: rabbitmq-secret
+                name: mysecret
                 key: SEED_USER_PASSWORD
         volumeMounts:
           - name: rabbitmq-data
