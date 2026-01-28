@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: converter
 spec:
+  replicas: 5
   selector:
     matchLabels:
       app: converter
@@ -44,6 +45,11 @@ spec:
                 secretKeyRef:
                   name: mysecret
                   key: AMQP_PASSWORD
+            - name: AMQP_QUEUE
+              valueFrom:
+                secretKeyRef:
+                  name: mysecret
+                  key: AMQP_QUEUE
           volumes:
             - name: config-volume
               configMap:
