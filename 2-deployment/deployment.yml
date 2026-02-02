@@ -23,3 +23,9 @@ spec:
             cpu: "100m"
         ports:
           - containerPort: 80
+        env:
+          - name: VITE_DOMAIN
+            valueFrom:
+              configMapKeyRef:
+                name: my-config-map
+                key: VITE_DOMAIN
